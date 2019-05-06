@@ -1,0 +1,19 @@
+Model = N6despot16SimpleRockSampleE
+Random root seed = 125354000
+Search depth = 90
+Discount = 0.95
+Simulation steps = 90
+Number of scenarios = 15000
+Search time per step = 1
+Regularization constant = 0
+Lower bound = DEFAULT
+Upper bound = DEFAULT
+Policy simulation depth = 90
+Target gap ratio = 0.95
+
+####################################### Round 0 #######################################
+Initial state: 
+Rover = 8; Rock = GOOD
+
+Rock belief: 0.5
+Position belief: LEFT_LEFT:0 LEFT_MIDDLE:0 LEFT_RIGHT:0 MIDDLE_LEFT:1.63042e-322 MIDDLE_MIDDLE:6.91466e-310 MIDDLE_RIGHT:6.95332e-310 RIGHT_LEFT:0 RIGHT_MIDDLE:1.63042e-322 RIGHT_RIGHT:1 EXIT:6.95332e-310
