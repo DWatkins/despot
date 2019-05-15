@@ -1125,7 +1125,7 @@ vector<ValuedAction>& BaseRockSample::ComputeOptimalSamplingPolicy() const {
 	}
 
 	clock_t start = clock();
-	cerr << "Computing optimal MDP policy...";
+	cout << "Computing optimal MDP policy...";
 	vector<ValuedAction> next_policy = vector<ValuedAction>(num_states);
 	// Using precomputed transition saves around 60% of the time
 	vector<vector<int> > transition = vector<vector<int> >(num_states);
@@ -1163,7 +1163,7 @@ vector<ValuedAction>& BaseRockSample::ComputeOptimalSamplingPolicy() const {
 		if (diff < 0.001)
 			break;
 	}
-	cerr << "Done [" << iter << " iters, tol = " << diff << ", "
+	cout << "Done [" << iter << " iters, tol = " << diff << ", "
 		<< (double) (clock() - start) / CLOCKS_PER_SEC << "s]!" << endl;
 
 	return mdp_policy_;
