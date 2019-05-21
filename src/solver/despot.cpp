@@ -221,9 +221,9 @@ void DESPOT::InitBounds(VNode* vnode, ScenarioLowerBound* lower_bound,
 }
 
 ValuedAction DESPOT::Search() {
-	if (logging::level() >= logging::DEBUG) {
+  //	if (logging::level() >= logging::DEBUG) {
 		model_->PrintBelief(*belief_);
-	}
+		//	}
 
 	if (Globals::config.time_per_move <= 0) // Return a random action if no time is allocated for planning
 		return ValuedAction(Random::RANDOM.NextInt(model_->NumActions()),
